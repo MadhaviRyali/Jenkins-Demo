@@ -1,0 +1,20 @@
+Steps to achieve triggering Jenkin Jobs Using Github Webhooks:
+
+
+
+1.) First Create a github repository and push some sample code into it.
+    After that Copy that github Url 
+2.) Open jenkins and create first job ->Enter that job name and save it.
+     After open source code management and choose git 
+          Repository name :paste git url
+          Credentials:
+3.) In Jenkins->Build triggers->Select Github hook trigger for GITScm pulling ( becoz this job listens the the webhook
+ triggers from github)
+
+Now open repository -> Settings->Webhooks->Add Webhook->Payload Url:----------
+->Content Type:->Add Webhook
+4.)save into build triggers
+
+5.)Project job done.
+
+When we update any changes in Github it also reflect in Jenkins.
